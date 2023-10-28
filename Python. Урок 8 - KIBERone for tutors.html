@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)https://kiber-1.com/moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-8/ -->
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body, input, textarea, select, button, dialog {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+    <meta name="theme-color" content="#3f807f">
+    <meta name="viewport" content="width=device-width">
+    
+<meta http-equiv="Content-Language" content="ru">
+<meta name="author" content="ur66.ru">
+<meta name="robots" content="all">
+<meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="origin">
+<title>Python. Урок 8 - KIBERone for tutors</title>
+<meta name="keywords" content="Python. Урок 8">
+<meta name="description" content="KIBERone for tutors: Программирование в Python. Создай свою первую игру. Обновлённый. - Python. Урок 8">
+<!--<base href="https://kiber-1.com">--><base href=".">
+<link rel="shortcut icon" href="https://kiber-1.com/favicon.ico" type="image/x-icon">
+
+<link href="./Python. Урок 8 - KIBERone for tutors_files/uss_style_7.2.0.min.css" rel="stylesheet" type="text/css"><style class="darkreader darkreader--sync" media="screen"></style>
+<link href="./Python. Урок 8 - KIBERone for tutors_files/style.css" rel="stylesheet" type="text/css"><style class="darkreader darkreader--sync" media="screen"></style>
+<script src="./Python. Урок 8 - KIBERone for tutors_files/jquery-1.9.1.min.js.Без названия" type="text/javascript" charset="windows-1251"></script><meta name="darkreader" content="d6904ee9d49d4fff91393819831c1155"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #032029 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #0a0a0a !important;
+}
+.tou-uknfeu {
+    background-color: #231603 !important;
+}
+.tou-6i3zyv {
+    background-color: #19576c !important;
+}
+div.mermaid-viewer-control-panel .btn {
+  fill: var(--darkreader-neutral-text);
+  background-color: var(--darkreader-neutral-background);
+}
+svg g rect.er {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+  fill-opacity: 0.8 !important;
+  fill: var(--darkreader-selection-background);
+}
+svg rect.er.relationshipLabelBox {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect, svg g g.nodes polygon {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+  fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0, svg line.messageLine1 {
+  stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+  fill: var(--darkreader-neutral-background) !important;
+}</style>
+<script src="./Python. Урок 8 - KIBERone for tutors_files/jquery.formstyler.min.js.Без названия" type="text/javascript" charset="windows-1251"></script>
+<link rel="preload" href="./Python. Урок 8 - KIBERone for tutors_files/jquery.form.min.js.Без названия" as="script" charset="windows-1251">
+<link rel="preload" href="./Python. Урок 8 - KIBERone for tutors_files/jquery.autocomplete.min.js.Без названия" as="script" charset="windows-1251">
+<link rel="preload" href="./Python. Урок 8 - KIBERone for tutors_files/uss-script-7.2.0.min.js.Без названия" as="script" charset="windows-1251">
+        <script src="./Python. Урок 8 - KIBERone for tutors_files/uss-extra.js.Без названия"></script>
+</head>
+<!--
+		Для смены цветовой схемы необходимо сменить класс у body.
+		Соответствие цветовых схем и названий классов для всего шаблона:
+		colorStyle1 - Цветовая схема 1
+		colorStyle2 - Цветовая схема 2
+		colorStyle3 - Цветовая схема 3
+		colorStyle4 - Цветовая схема 4
+		colorStyle5 - Цветовая схема 5
+		colorStyle6 - Цветовая схема 6
+	-->
+
+<body class="colorStyle1  singlepage" template_name="K3">
+    <div id="wrap">
+        <div class="header-bg">
+            <div class="header">
+                <div class="inner">
+                    <div class="left">
+                        <div class="logo_description">
+                                                    </div>
+                        <div class="logo-row">
+                            <a href="https://kiber-1.com/moduli-t/">
+                                <div class="logo-column">
+                                    <div class="logo-image">
+                                        <p><img src="./Python. Урок 8 - KIBERone for tutors_files/logo.jpg" alt="" width="202" height="104"></p>                                    </div>
+                                </div>
+                                <div class="logo-column">
+                                    <div class="logo">
+                                        <div class="logo_sitename">
+                                            KIBERone                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="center">
+                    </div>
+                    <div class="right">
+                        <div class="row">
+                            <div class="email">
+                                <p><a href="mailto:info@kiber-one.com"><span>info@kiber-one.com </span> </a></p>                            </div>
+                            <div class="contacts">
+                                <p><span> +7 (343) 206-64-79 </span></p>                            </div>
+                            
+		<div class="auth">
+			<div><div>Здравствуйте, Кондаков Тимофей Михайлович. <a href="https://kiber-1.com/enter/?logout=1">Выход</a></div><div><a href="https://kiber-1.com/mycabinet/">Личный кабинет</a></div></div>
+		</div>
+	                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="menu">
+                <div class="inner">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="in_menu">
+                        <ul><li class="active first last"><a  class="active first last" href="moduli-t/" title="Модули" >Модули</a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/klaviaturnyy-trenazher/" title="Клавиатурный тренажёр" >Клавиатурный тренажёр</a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/klaviaturnyy-trenazher/klaviaturnyy-trenazher-urok-1/" title="Клавиатурный тренажёр. Урок 1." >Клавиатурный тренажёр. Урок 1.</a></li><li><a  href="moduli-t/klaviaturnyy-trenazher/klaviaturnyy-trenazher-urok-2/" title="Клавиатурный тренажёр. Урок 2. " >Клавиатурный тренажёр. Урок 2. </a></li><li><a  href="moduli-t/klaviaturnyy-trenazher/klaviaturnyy-trenazher-urok-3/" title="Клавиатурный тренажёр. Урок 3. " >Клавиатурный тренажёр. Урок 3. </a></li><li><a  href="moduli-t/klaviaturnyy-trenazher/klaviaturnyy-trenazher-urok-4/" title="Клавиатурный тренажёр. Урок 4." >Клавиатурный тренажёр. Урок 4.</a></li><li class=" last"><a  class=" last" href="moduli-t/klaviaturnyy-trenazher/klaviaturnyy-trenazher-urok-5/" title="Клавиатурный тренажёр. Урок 5." >Клавиатурный тренажёр. Урок 5.</a></li></ul></li><li><a  href="moduli-t/instrukciya-k-filtru-kontenta/" title="Инструкция к фильтру контента" >Инструкция к фильтру контента</a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/" title="Minecraft education" >Minecraft education.  Азы программирования на языке Lua <span> (доступен до 31.01.2024)</span></a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-1/" title="Minecraft education. Урок 1 " >Minecraft education. Урок 1  <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-azy-programmirovaniya-na-yazyke-lua-1/" title="Minecraft education. Урок 2 " >Minecraft education. Урок 2  <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-3/" title="Minecraft education. Урок 3" >Minecraft education. Урок 3 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-4/" title="Minecraft education. Урок 4" >Minecraft education. Урок 4 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-5/" title="Minecraft education. Урок 5 " >Minecraft education. Урок 5  <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-6/" title="Minecraft education. Урок 6" >Minecraft education. Урок 6 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-7/" title="Minecraft education. Урок 7" >Minecraft education. Урок 7 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-8/" title="Minecraft education. Урок 8 " >Minecraft education. Урок 8  <span> (доступен до 31.01.2024)</span></a></li><li class=" last"><a  class=" last" href="moduli-t/minecraft-education-azy-programmirovaniya-na-yazyke-lua/minecraft-education-urok-9/" title="Minecraft education. Урок 9" >Minecraft education. Урок 9 <span> (доступен до 31.01.2024)</span></a></li></ul></li><li><a  href="moduli-t/ustroystvo-kompyutera/" title="Устройство компьютера" >Устройство компьютера <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/magiya-effektnyh-prezentaciy-powerpoint--canva/" title="Магия эффектных презентаций. PowerPoint и Desygner" >Магия эффектных презентаций. PowerPoint и Desygner <span> (доступен до 31.01.2024)</span></a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/magiya-effektnyh-prezentaciy-powerpoint--canva/powerpoint--canva-urok-1/" title="PowerPoint Урок 1" >PowerPoint Урок 1 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/magiya-effektnyh-prezentaciy-powerpoint--canva/powerpoint-urok-2/" title="PowerPoint Урок 2" >PowerPoint Урок 2 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/magiya-effektnyh-prezentaciy-powerpoint--canva/powerpoint-urok-3/" title="PowerPoint Урок 3" >PowerPoint Урок 3 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/magiya-effektnyh-prezentaciy-powerpoint--canva/desygner-com-4-urok/" title="Desygner. 4 урок" >Desygner. 4 урок <span> (доступен до 31.01.2024)</span></a></li><li class=" last"><a  class=" last" href="moduli-t/magiya-effektnyh-prezentaciy-powerpoint--canva/desygner-5-urok/" title="Desygner. 5 урок" >Desygner. 5 урок <span> (доступен до 31.01.2024)</span></a></li></ul></li><li class="active"><a  class="active" href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/" title="Программирование в Python. Создай свою первую игру. Обновлённый." >Программирование в Python. Создай свою первую игру. Обновлённый. <span> (доступен до 31.01.2024)</span></a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-1-urok/" title="Python. Урок 1" >Python. Урок 1 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-2/" title="Python. Урок 2" >Python. Урок 2 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-3/" title="Python. Урок 3" >Python. Урок 3 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-4/" title="Python. Урок 4" >Python. Урок 4 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-5/" title="Python. Урок 5" >Python. Урок 5 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-6/" title="Python. Урок 6" >Python. Урок 6 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-7/" title="Python. Урок 7" >Python. Урок 7 <span> (доступен до 31.01.2024)</span></a></li><li class="active"><a  class="active" href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-8/" title="Python. Урок 8" >Python. Урок 8 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-9/" title="Python. Урок 9" >Python. Урок 9 <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-10/" title="Python. Урок 10" >Python. Урок 10 <span> (доступен до 31.01.2024)</span></a></li><li class=" last"><a  class=" last" href="moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/python-urok-11/" title="Python. Урок 11" >Python. Урок 11 <span> (доступен до 31.01.2024)</span></a></li></ul></li><li><a  href="moduli-t/google-servisy-new/" title="Google Сервисы NОВАЯ ВЕРСИЯ" >Google Сервисы  <span> (доступен до 31.01.2024)</span></a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/google-servisy-new/google-servisy-new-urok-1/" title="Google Сервисы New. Урок 1" >Google Сервисы. Урок 1 НОВЫЙ <span> (доступен до 31.01.2024)</span></a></li><li><a  href="moduli-t/google-servisy-new/google-servisy-new-urok-2/" title="Google Сервисы New. Урок 2" >Google Сервисы New. Урок 2 НОВЫЙ <span> (доступен до 31.01.2024)</span></a></li><li class=" last"><a  class=" last" href="moduli-t/google-servisy-new/google-servisy-new-urok-3/" title="Google Сервисы New. Урок 3" >Google Сервисы New. Урок 3 НОВЫЙ <span> (доступен до 31.01.2024)</span></a></li></ul></li><li><a  href="moduli-t/run-marco/" title="Run Marco!" >Run Marco! <span> (доступен до 31.01.2024)</span></a><ul class="submenu"><li class=" first"><a  class=" first" href="moduli-t/run-marco/1-urok/" title="1 урок" >1 урок <span> (доступен до 31.01.2024)</span></a></li><li class=" last"><a  class=" last" href="moduli-t/run-marco/2-urok/" title="2 урок" >2 урок <span> (доступен до 31.01.2024)</span></a></li></ul></li></ul></li></ul>                    </div>
+                    <div class="search">
+				<form class="uss_site_search" method="get" action="https://kiber-1.com/sitesearch/">
+					<input class="uss_input_name" type="text" value="" name="search" id="search_21675_1269" placeholder="Поиск по сайту" />
+					<input class="uss_submit" type="submit" value="" />
+				</form></div>                </div>
+            </div>-->
+        </div>
+                <div class="container">
+                    <div class="inner">
+                       <!--   <div class="aside aside_left">
+                         
+                        </div>
+                         <div class="aside aside_right"></div> -->
+                        <div class="center">
+                            <div class="bread"><a href="https://kiber-1.com/" class="breadcrumbs_main">Главная</a> /  <a href="https://kiber-1.com/moduli-t/">Модули</a>  /  <a href="https://kiber-1.com/moduli-t/programmirovanie-v-python-sozday-svoyu-pervuyu-igru-obnovlenn/">Программирование в Python. Создай свою первую игру. Обновлённый.</a>  / Python. Урок 8</div>                                <div class="content">
+                                    <h1>
+                                        Python. Урок 8                                    </h1>
+                                    <div class="section section_text id_22235"><div class="uss_section_content"><ul class="files_list"><li><a href="https://kiber-1.com/mycabinet/get_file/379/">Python. Обновлённый.</a></li></ul><p><strong>Урок 8. Знакомство с функциями на примере ColabTurtle</strong></p>
+<p>&nbsp;</p>
+<div class="tableScoller-wrap"><table border="1" width="754">
+<tbody>
+<tr>
+<td width="246">
+<p>Курс</p>
+</td>
+<td width="508">
+<p>Программирование на языке Python</p>
+</td>
+</tr>
+<tr>
+<td width="246">
+<p>Тема урока</p>
+</td>
+<td width="508">
+<p>Урок 8. Знакомство с функциями на примере ColabTurtle</p>
+</td>
+</tr>
+<tr>
+<td width="246">
+<p>Цель урока</p>
+</td>
+<td width="508">
+<p>Научиться писать и использовать простые функции</p>
+</td>
+</tr>
+<tr>
+<td width="246">
+<p>Средства</p>
+</td>
+<td width="508">
+<p>Сеть Интернет и Google Colab</p>
+</td>
+</tr>
+<tr>
+<td width="246">
+<p>Задачи</p>
+</td>
+<td width="508">
+<p>Показать, как пишутся простые функции, как их использовать и разобрать их синтаксис</p>
+</td>
+</tr>
+<tr>
+<td width="246">
+<p>Рекомендации тьютору</p>
+</td>
+<td width="508">
+<p>Ознакомиться с материалом к уроку: <span><a href="https://colab.research.google.com/drive/1pkb0sIw73CV9oRwa7uQ6z6RYR0cYamKk?usp=sharing">https://colab.research.google.com/drive/1pkb0sIw73CV9oRwa7uQ6z6RYR0cYamKk?usp=sharing</a></span></p>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>&nbsp;</strong></p>
+<p><strong>План урока</strong></p>
+<p>&nbsp;</p>
+<div class="tableScoller-wrap"><table border="1" width="761">
+<tbody>
+<tr>
+<td width="251">
+<p>Этап</p>
+</td>
+<td width="363">
+<p>Содержание</p>
+</td>
+<td width="147">
+<p>Время</p>
+</td>
+</tr>
+<tr>
+<td width="251">
+<p>Организационный момент</p>
+</td>
+<td width="363">
+<p>Ожидание, приветствие</p>
+</td>
+<td width="147">
+<p>5 мин</p>
+</td>
+</tr>
+<tr>
+<td width="251">
+<p>Формулировка темы</p>
+</td>
+<td width="363">
+<p>Знакомство с темой занятия</p>
+</td>
+<td width="147">
+<p>5 мин</p>
+</td>
+</tr>
+<tr>
+<td width="251">
+<p>Раскрытие основной темы</p>
+</td>
+<td width="363">
+<p>Объяснить, как пишутся простые функции, как их использовать, и разобрать их синтаксис</p>
+</td>
+<td width="147">
+<p>80 мин</p>
+</td>
+</tr>
+<tr>
+<td width="251">
+<p>Рефлексия</p>
+</td>
+<td width="363">
+<p>Ответ на вопросы, напоминание пройденного материала</p>
+</td>
+<td width="147">
+<p>7 мин</p>
+</td>
+</tr>
+<tr>
+<td width="251">
+<p>Подведение итогов</p>
+</td>
+<td width="363">
+<p>Положительные оценки учащимся</p>
+</td>
+<td width="147">
+<p>3 мин</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p></p>
+<p><strong>Рекомендация тьютору </strong></p>
+<p>&nbsp;</p>
+<p>Заранее ознакомиться с материалом к уроку: <span><a href="https://colab.research.google.com/drive/1RBUuSIirCqOamL4ZWd6Mz4nMAx61ATWD?usp=sharing">https://colab.research.google.com/drive/1RBUuSIirCqOamL4ZWd6Mz4nMAx61ATWD?usp=sharing</a></span></p>
+<p>На занятии рекомендуется создать свой файл с Google Colab и вместе с детьми работать в чистом блокноте (так называются файлы Google Colab). Если отсутствует сеть Интернет, можно использовать альтернативу для работы – Jupyter Notebook.</p>
+<p>Инструкция по установке и запуску Jupyter Notebook: <span><a href="https://docs.google.com/document/d/1bRhLEY1Q9yzCIFkO41r2auG2X6wVBCHdNkvt4ZkwRDg/edit?usp=sharing">Инструкция по установке Jupyter Notebook</a></span><u>.</u></p>
+<p>&nbsp;</p>
+<p><strong>Формулировка темы (5 мин)</strong></p>
+<p>&nbsp;</p>
+<p>Прежде чем мы начнем занятие, давайте немного разомнем пальцы в тренажере:</p>
+<p><span><a href="https://www.speedcoder.net/lessons/">https://www.speedcoder.net/lessons/</a></span>.</p>
+<p>Результаты дети записывают в блокнот, чтобы можно было увидеть прогресс того, насколько дети быстрее начинают писать. Тьютор тоже может записывать свой прогресс.</p>
+<p>&nbsp;</p>
+<p>Теперь давайте перейдем непосредственно к сегодняшней теме – функции.</p>
+<p>Слово «Функция» уже много раз звучало на занятиях. Раньше мы использовали функции, которые уже были в самом Python. Теперь мы научимся самостоятельно писать функции на примере ColabTurtle.</p>
+<p>&nbsp;</p>
+<p>Давайте откроем Google Colab и начнем решать задачи.</p>
+<p>&nbsp;</p>
+<p><strong>Раскрытие основной темы (80 мин)</strong></p>
+<p>&nbsp;</p>
+<p>Функции – это такие участки кода, которые изолированы от остальной программы и выполняются только тогда, когда вызываются.</p>
+<p>С несколькими функциями мы уже сталкивались. Например len() int() print() input() del()</p>
+<p>&nbsp;</p>
+<p>Напишем простую функцию, которая складывает два числа:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/1.png" alt="" width="285" height="82"></p>
+<p><br><br></p>
+<p>Если запустить ячейку, ничего не происходит. Для того, чтобы наша функция заработала, надо ее <strong>вызвать</strong>:</p>
+<p><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/2.png" alt="" width="236" height="89"></strong></p>
+<p><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/3.png" alt="" width="291" height="93"></strong></p>
+<p><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/4.png" alt="" width="282" height="89"></strong></p>
+<p><br><br></p>
+<p>Теперь разберем, как мы написали функцию.</p>
+<ul>
+<li>в начале идет ключевое слово def;</li>
+<li>далее пишется имя функции;</li>
+<li>далее в скобках указывается, сколько параметров принимает функция. Функция может быть без параметров;</li>
+<li>в конце ставится двоеточие, как в циклах;</li>
+<li>далее с отступом в 1 табуляцию пишется тело функции;</li>
+<li>чтобы вызвать функцию, необходимо написать ее имя и ввести нужные параметры:</li>
+</ul>
+<p><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/5.png" alt="" width="447" height="375"></strong></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/6.png" alt="" width="278" height="310"></p>
+<p><em>(Записать в блокнот)</em></p>
+<p><strong>&nbsp;</strong></p>
+<p>Давайте ближе знакомиться с функциями на примере работы с ColabTurtle.</p>
+<p>Вводим заклинание:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/7.png" alt="" width="615" height="209"></p>
+<p><br><br></p>
+<p>Давайте снова напишем программу для рисования квадрата. Попробуйте чделать это самостоятельно. Вспомните, какие команды мы проходили. Подскажу – в начале пишется initializeTurtle().</p>
+<p>Решение:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/8.png" alt="" width="268" height="242"></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/9.png" alt="" width="398" height="372"></p>
+<p><br><br></p>
+<p>Теперь, давайте преобразуем код в функцию, которая рисует квадрат:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/10.png" alt="" width="245" height="196"></p>
+<p><br><br></p>
+<p>Чтобы функция заработала, ее необходимо вызвать:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/11.png" alt="" width="240" height="89"></p>
+<p><br><br></p>
+<p>Мы видим, что у нас рисуется квадрат:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/12.png" alt="" width="345" height="310"></p>
+<p><br><br></p>
+<p>Но какой смысл в такой функции? Давайте ее дорабатывать.</p>
+<p>Сделаем так, чтобы можно было регулировать размер этого квадрата. Для этого необходимо указать параметр размера в функции, и этот параметр использовать везде, где у нас черепаха идет вперед:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/13.png" alt="" width="280" height="194"></p>
+<p><br><br></p>
+<p>Теперь воспользуемся функцией. Нарисуем квадрат размером в 200 пикселей:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/14.png" alt="" width="257" height="96"></p>
+<p><br><br></p>
+<p>Получился квадрат явно больше прежнего. Попробуйте ввести другие значения и посмотреть, какой получится результат.</p>
+<p>&nbsp;</p>
+<p>Функции решают несколько проблем. Первая – функция делает код более компактным, вторая – избавляет от написания комментариев, так как в большинстве случаев по имени функции возможно понять, что она делает. Также, используя функции мы можем написать более сложный код. Например, рисовать такие сложные узоры:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/15.png" alt="" width="312" height="265"></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/16.png" alt="" width="268" height="173"></p>
+<p><br><br></p>
+<p>На прошлом уроке мы писали код для рисования треугольника, круга, многоугольника и других фигур. Давайте напишем функции для каждой из этих фигур:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/17.png" alt="" width="378" height="380"></p>
+<p><br><br></p>
+<p>Теперь возьмите код выше, в котором мы рисовали узор при помощи квадратов. Замените строку «drawSquare(50)» на любую другую только что написанную функцию:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/18.png" alt="" width="302" height="183"></p>
+<p><br><br></p>
+<p>В результате будут получаться уже другие узоры:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/19.png" alt="" width="308" height="279"></p>
+<p><br><br></p>
+<p>Далее напишем код, который будет рисовать белый круг (закрашенный). Потом этот код мы превратим в функцию и будем менять цвет:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/20.png" alt="" width="301" height="163"></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/21.png" alt="" width="318" height="294"></p>
+<p><br><br></p>
+<p>Запишем это в отдельную функцию, добавим параметр размера:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/22.png" alt="" width="313" height="166"></p>
+<p>Проверим, что она работает правильно:</p>
+<p><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/23.png" alt="" width="308" height="78"></strong></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/24.png" alt="" width="323" height="274"></p>
+<p><br><br></p>
+<p>Теперь давайте менять цвет круга.</p>
+<p>Для этого мы будем использовать команду color(). Но перед этим в списке напишем разные цвета, какие вы знаете:</p>
+<p>colors = ["lavender", "thistle", "plum", "violet", "orchid", "fuchsia", "magenta", "mediumOrchid", "mediumPurple", "rebeccaPurple", "blueViolet", "darkViolet", "darkOrchid", "darkMagenta", "purple", "indigo", "slateBlue", "darkSlateBlue", "mediumSlateBlue"]</p>
+<p>&nbsp;</p>
+<p>Теперь будем рисовать разноцветный круг. Возьмем код круга, нарисованного нами ранее, и изменим его. Добавим параметр цвета colors. Используем команду для изменения цвета:</p>
+<p>color(colors[i % len(colors)])</p>
+<p>&nbsp;</p>
+<p>В скобках мы указали цвет, который будем использовать. Разберем подробнее эту строку:</p>
+<p><strong>colors</strong> – это наш список цветов;</p>
+<p><strong>len(colors)</strong> – это количество наших цветов.</p>
+<p><strong>i</strong> – переменная, которая на каждом шаге меняет свое число на 1, начиная с 0.</p>
+<p>Если бы иы написали просто colors[i], в один момент i было бы больше, чем у нас цветов, и это было бы ошибкой.</p>
+<p>&nbsp;</p>
+<p>Если мы напишем [i % len(colors)], за пределы количества цветов мы не сможем выйти. Допустим у нас 3 цвета:</p>
+<p>len(colors) = 3</p>
+<p>i = 1</p>
+<p>1%3 =&nbsp; 1</p>
+<p>i = 2</p>
+<p>2 % 3 = 2</p>
+<p>i = 3</p>
+<p>3 % 3 = 0</p>
+<p>i = 4</p>
+<p>4 % 3 = 1</p>
+<p>i = 5</p>
+<p>5 % 3 = 2</p>
+<p>и так далее.</p>
+<p>То есть мы постоянно проходим по всем нашим цветам, при это больше 3 у нас не бывает.</p>
+<p>Результат работы программы:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/25.png" alt="" width="364" height="76"></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/26.png" alt="" width="350" height="341"></p>
+<p><br><br></p>
+<p>Мы написали функцию, которая рисует круг из тех цветов, которые мы заранее заполнили в списке.</p>
+<p>Теперь изменим этот код таким образом, чтобы он рисовал градиентный круг.</p>
+<p>&nbsp;</p>
+<p>Градиент – это последовательно меняющиеся цвета.</p>
+<p>&nbsp;</p>
+<p>Команда для черепахи color() может принимать в качестве параметра число от 0 до 255. Например, так - color(10, 255, 0).</p>
+<p>Можно сказать, что каждое число отвечает за яркость определенного цвета в оттенке. Первое число отвечает за красный, второе – за зеленый, третье – за синий (RGB – red, green, blue).</p>
+<p>(255,0,0) – ярко красный цвет;</p>
+<p>(0,255,0) – ярко зеленый цвет;</p>
+<p>(0,0,255) – ярко синий цвет;</p>
+<p>(0,0,0) – черный цвет;</p>
+<p>(255,255,255) – белый цвет.</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/27.png" alt="" width="694" height="232"></p>
+<p>&nbsp;</p>
+<p>color() не обязательно так заполнять, можно ввести любые удобные значения:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/28.png" alt="" width="596" height="431"></p>
+<p><br><br></p>
+<p>Либо так:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/29.png" alt="" width="696" height="217"></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/30.png" alt="" width="606" height="450"></p>
+<p><br><br></p>
+<p>Далее, используя написанные функции, попробуйте нарисовать новые узоры. Например:</p>
+<p><strong>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/31.png" alt="" width="290" height="181"></strong></p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/32.png" alt="" width="436" height="366"></p>
+<p><br><br></p>
+<p>Если останется время, можно решить задачи, которые были раньше, только с использованием функций, и записать решение в функцию. Например:</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./Python. Урок 8 - KIBERone for tutors_files/33.png" alt="" width="677" height="290"></p>
+<p><br><br></p>
+<p><strong>Рекомендация тьютору</strong></p>
+<p>&nbsp;</p>
+<p>Если осталось время, можно порешать простые задачи с сайта Timus.</p>
+<p>Timus – это архив олимпиадных задач. Открываете любой Том, сортируете задачи по сложности и идете по порядку возрастания сложности: <span><a href="https://acm.timus.ru/problemset.aspx">https://acm.timus.ru/problemset.aspx</a></span></p>
+<p>&nbsp;</p>
+<p><strong>Рефлексия (7 мин)</strong></p>
+<p>&nbsp;</p>
+<p>Тьютор отвечает на вопросы и повторяет пройденный материал. Можно дать домашнее задание, если считает необходимым или если не успели решить все задачи. Можно дать рекомендацию заниматься с тренажером скоропечати.</p>
+<p>&nbsp;</p>
+<p><strong>Заключение (3 мин)</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>В целом урок прошел хорошо, вы внимательно слушали и выполняли все задания.</p>
+<p>&nbsp;</p>
+<p><em>*Напоминание пройденной темы и положительная оценка каждого учащегося*</em></p>
+<p>&nbsp;</p>
+<p>К следующему занятию обязательно выполните задания, которые я вам дал, мы проверим их решение.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p></p>
+<p>&nbsp;</p></div></div><div class="cleaner"></div>                                </div>
+                        </div>
+                    </div>
+                </div>
+                           
+                                <div class="footer_bg">
+                                    <div class="footer">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <div class="social">
+                                                    <p><a rel="noopener" href="https://vk.com/kiberone" target="_blank"> <img src="./Python. Урок 8 - KIBERone for tutors_files/soc1.png" alt=""> </a> <a rel="noopener" href="https://www.youtube.com/channel/UCZm3SbtxQNvmoTrJSY3HOIA?sub_confirmation=1" target="_blank"> <img src="./Python. Урок 8 - KIBERone for tutors_files/soc2.png" alt=""> </a><a rel="noopener" href="https://www.instagram.com/kiber.one/" target="_blank"><img src="./Python. Урок 8 - KIBERone for tutors_files/soc5.png" alt=""> </a> <a rel="noopener" href="https://www.facebook.com/KIBERone/" target="_blank"> <img src="./Python. Урок 8 - KIBERone for tutors_files/soc6.png" alt=""> </a></p>                                                </div>
+                                                <div class="counters">
+                                                    <script type="text/javascript">
+	function copyBlock() {return false;}
+	document.ondragstart = copyBlock; //запрет на перетаскивание
+	document.onselectstart = copyBlock; //запрет на выделение элементов страницы
+	document.oncontextmenu = copyBlock; //запрет на выведение контекстного меню
+</script>
+<script type="text/javascript">initStyler();</script><script async="" src="./Python. Урок 8 - KIBERone for tutors_files/saved_resource"></script>                                                </div>
+                                            </div>
+                                            <div class="center"></div>
+                                            <div class="right">
+                                                <div class="row">
+                                                    <div class="email">
+                                                        <p><a href="mailto:info@kiber-one.com"><span>info@kiber-one.com</span></a></p>                                                    </div>
+                                                    <div class="contacts">
+                                                        <p><span> +7 (343) 206-64-79 </span></p>                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="address">
+                                                        <p>г. Екатеринбург</p>
+<p>ул. Московская, 77</p>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="inner">
+                                            <div class="left">
+                                                <div class="policy">
+                                                    <a href="https://kiber-1.com/privacy-policy/">Политика конфиденциальности</a>
+                                                </div>
+                                                <div class="copy">
+                                                    <div class="uss-site-copyright">©&nbsp;2020 - 2023 KIBERone</div>                                                </div>
+                                            </div>
+                                            <div class="center"></div>
+                                            <div class="right">
+                                                <div class="dev">
+                                                    <div class="uss-copyright  customColor"><a class="uss-copyright_logo" href="https://ur66.ru/" target="_blank" title="создание сайтов"><i class="g-png"><img style="background: rgb(98, 178, 176); --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor: #3f807f;" src="./Python. Урок 8 - KIBERone for tutors_files/uss-logo.png" width="22" height="23" alt="создание сайтов" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor=""></i></a><a class="uss-copyright_text" href="https://ur66.ru/" target="_blank" title="создание сайтов"><span style="color: rgb(98, 178, 176); --darkreader-inline-color: #6fb8b6;" data-darkreader-inline-color="">создание сайтов</span> <strong style="color: rgb(98, 178, 176); --darkreader-inline-color: #6fb8b6;" data-darkreader-inline-color="">URALSOFT</strong></a></div>                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </div>
+    <script src="./Python. Урок 8 - KIBERone for tutors_files/jquery.form.min.js.Без названия" type="text/javascript" charset="windows-1251"></script>
+<script src="./Python. Урок 8 - KIBERone for tutors_files/jquery.autocomplete.min.js.Без названия" type="text/javascript" charset="windows-1251"></script>
+<script src="./Python. Урок 8 - KIBERone for tutors_files/uss-script-7.2.0.min.js.Без названия" type="text/javascript" charset="windows-1251"></script>
+        <script src="./Python. Урок 8 - KIBERone for tutors_files/jquery.mCustomScrollbar.concat.min.js.Без названия"></script>
+        <script src="./Python. Урок 8 - KIBERone for tutors_files/slick.min.js.Без названия"></script>
+        <script type="text/javascript" src="./Python. Урок 8 - KIBERone for tutors_files/main.js.Без названия"></script>
+        <script src="./Python. Урок 8 - KIBERone for tutors_files/flex.js.Без названия"></script>
+
+</body></html>
